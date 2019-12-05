@@ -44,7 +44,6 @@ const UpdateCar = ({ match }) => {
             if (data.error) {
                 setValues({ ...values, error: data.error });
             } else {
-                console.log(values)
                 setValues({
                     ...values,
                     name: data.name,
@@ -54,11 +53,8 @@ const UpdateCar = ({ match }) => {
                     fuel: data.fuel,
                     year: data.year,
                     category: data.category._id,
-                    shipping: data.shipping,
-                    quantity: data.quantity,
                     formData: new FormData()
                 });
-
                 initCategories();
             }
         });
@@ -121,27 +117,27 @@ const UpdateCar = ({ match }) => {
 
             <div className="form-group">
                 <label className="text-muted">Name</label>
-                <input onChange={handleChange('name')} type="text" className="form-control" values={name}></input>
+                <input onChange={handleChange('name')} type="text" className="form-control" value={name}></input>
             </div>
 
             <div className="form-group">
                 <label className="text-muted">Chassis Number</label>
-                <input onChange={handleChange('chassis')} type="number" className="form-control" values={chassis}></input>
+                <input onChange={handleChange('chassis')} type="number" className="form-control" value={chassis}></input>
             </div>
 
             <div className="form-group">
                 <label className="text-muted">Engine Number</label>
-                <input onChange={handleChange('engine')} type="number" className="form-control" values={engine}></input>
+                <input onChange={handleChange('engine')} type="number" className="form-control" value={engine}></input>
             </div>
 
             <div className="form-group">
                 <label className="text-muted">Engine Power</label>
-                <input onChange={handleChange('enginePower')} type="text" className="form-control" values={enginePower}></input>
+                <input onChange={handleChange('enginePower')} type="text" className="form-control" value={enginePower}></input>
             </div>
 
             <div className="form-group">
                 <label className="text-muted">Fuel Type</label>
-                <select onChange={handleChange('fuel')} type="text" className="form-control" values={fuel}>
+                <select onChange={handleChange('fuel')} type="text" className="form-control" value={fuel}>
                     <option value="">Choose Fuel</option>
                     <option value="Petrol">Petrol</option>
                     <option value="Diesel">Diesel</option>
@@ -152,7 +148,7 @@ const UpdateCar = ({ match }) => {
 
             <div className="form-group">
                 <label className="text-muted">The Year of Production </label>
-                <input onChange={handleChange('year')} type="text" className="form-control" values={year}></input>
+                <input onChange={handleChange('year')} type="text" className="form-control" value={year}></input>
             </div>
 
             <div className="form-group">
