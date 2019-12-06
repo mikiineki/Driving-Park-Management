@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Layout from './Layout'
 import {getCar, createCarOrder} from '../admin/apiAdmin'
 import ShowImage from './ShowImage'
-import { isAuthenticated } from "../auth";
 
 const ViewCar = ({match}) => {
 

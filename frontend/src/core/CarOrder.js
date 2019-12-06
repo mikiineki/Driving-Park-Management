@@ -107,12 +107,12 @@ const CarOrder = () => {
                 <input onChange={handleChange('finalLocation')} type="text" className="form-control" values={finalLocation}></input>
             </div>
             <div className="form-group">
-                <label className="text-muted">From</label>
-                <input onChange={handleChange('from')} type="text" className="form-control" values={from}></input>
+                <label className="text-muted">From(Date)</label>
+                <input onChange={handleChange('from')} type="date" className="form-control" values={from}></input>
             </div>
             <div className="form-group">
-                <label className="text-muted">To</label>
-                <input onChange={handleChange('to')} type="text" className="form-control" values={to}></input>
+                <label className="text-muted">To(Date)</label>
+                <input onChange={handleChange('to')} type="date" className="form-control" values={to}></input>
             </div>
 
             

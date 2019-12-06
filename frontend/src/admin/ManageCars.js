@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 import Layout from "../core/Layout";
 import { isAuthenticated } from "../auth";
 import { Link } from "react-router-dom";
-import {createCar, getCategories} from './apiAdmin'
 import {getCars, deleteCar} from './apiAdmin'
 
 const ManageProducts = () => {

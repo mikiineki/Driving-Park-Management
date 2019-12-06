@@ -1,7 +1,7 @@
 import { API } from '../config';
 
 export const getCars = (sortBy) => {
-    return fetch(`${API}/cars?sortBy=${sortBy}&order=desc&limit=6`,{
+    return fetch(`${API}/cars?sortBy=${sortBy}&order=desc&limit=10`,{
         method: "GET"
     })
     .then(response => {
@@ -54,4 +54,14 @@ export const getFilteredCars = (limit, filters = {}) => {
     .catch(err => {
         console.log(err)
     })
+}
+
+export const getCarOrders = () => {
+    return fetch(`${API}/carorders`,{
+        method: "GET"
+    })
+    .then(response => {
+        return response.json()
+    })
+    .catch(err => console.log(err));
 }

@@ -28,6 +28,11 @@ const AdminDashboard = () => {
                             Manage Cars
                         </Link>
                     </li>
+                    <li className="list-group-item">
+                        <Link className="nav-link" to="/admin/carorders">
+                            Car Orders
+                        </Link>
+                    </li>
                 </ul>
             </div>
         );

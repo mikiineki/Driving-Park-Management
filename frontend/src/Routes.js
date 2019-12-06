@@ -13,6 +13,7 @@ import AddCar from './admin/AddCar'
 import ManageCars from './admin/ManageCars'
 import UpdateCar from './admin/UpdateCar'
 import CarOrder from './core/CarOrder'
+import CarOrders from './core/CarOrders'
 import ViewCar from './core/ViewCar'
 
 const Routes = () => {
@@ -30,6 +31,7 @@ const Routes = () => {
             <AdminRoute path="/create/category" exact component={AddCategory}></AdminRoute>
             <AdminRoute path="/create/car" exact component={AddCar}></AdminRoute>
             <AdminRoute path="/admin/cars" exact component={ManageCars}></AdminRoute>
+            <AdminRoute path="/admin/carorders" exact component={CarOrders}></AdminRoute>
             <AdminRoute path="/admin/car/update/:carId" exact component={UpdateCar}></AdminRoute>
         </Switch>
     </BrowserRouter>)

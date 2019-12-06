@@ -182,14 +182,6 @@ const UpdateCar = ({ match }) => {
             </div>
         );
 
-    const redirectUser = () => {
-        if (redirectToProfile) {
-            if (!error) {
-                return <Redirect to="/" />;
-            }
-        }
-    };
-
     return (
         <Layout title="Update Car Information" description={`Welcome ${user.name}`}>
             <div className="row">
@@ -198,7 +190,7 @@ const UpdateCar = ({ match }) => {
                     {showSuccess()}
                     {showError()}
                     {newPostForm()}
-                    {redirectUser()}
+                   
                 </div>
             </div>
         </Layout>
